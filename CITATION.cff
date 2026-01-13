@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+
+title: "Kaelion v3.1: A Phenomenological Correspondence Between Loop Quantum Gravity and Holography"
+
+authors:
+  - family-names: Perez
+    given-names: Erick
+    affiliation: Independent Researcher
+    email: erick.perez@proton.me
+
+version: "3.1"
+date-released: 2026-01-15
+
+doi: 10.5281/zenodo.18235090
+
+abstract: >
+  Kaelion is a phenomenological research framework exploring a continuous
+  correspondence between Loop Quantum Gravity (LQG) and holographic entropy
+  formulations in black hole physics. The framework introduces a scale-dependent
+  interpolation parameter, lambda, connecting discrete quantum geometry with
+  continuum holographic descriptions. This release provides numerical simulations,
+  theoretical consistency checks, and falsifiable phenomenological predictions,
+  without claiming a fundamental quantum gravity theory.
+
+keywords:
+  - quantum gravity
+  - loop quantum gravity
+  - holography
+  - black hole entropy
+  - phenomenology
+  - information theory
+
+license: CC-BY-4.0
+
+repository-code: "https://github.com/AsesorErick/kaelion"
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Perez
+      given-names: Erick
+  title: "Kaelion v3.1: A Phenomenological Correspondence Between Loop Quantum Gravity and Holography"
+  year: 2026
+  doi: 10.5281/zenodo.18235090
