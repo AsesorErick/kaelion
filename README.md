@@ -3,8 +3,8 @@
 
 Kaelion is a phenomenological research framework exploring a continuous correspondence
 between Loop Quantum Gravity (LQG) and holographic entropy formulations in black hole physics.
-The framework introduces a scale-dependent interpolation parameter, λ, connecting discrete
-quantum geometry with continuum holographic descriptions.
+The framework introduces a scale-dependent interpolation parameter (lambda),
+connecting discrete quantum geometry with continuum holographic descriptions.
 
 This repository and the associated Zenodo archive provide reproducible numerical simulations,
 theoretical consistency checks, and documentation supporting the Kaelion v3.1 framework.
@@ -29,19 +29,16 @@ No experimental detection or fundamental action principle is claimed in this rel
 
 The central entropy correspondence explored in Kaelion is:
 
-\[
-S(A, I) = \frac{A}{4G}
-+ \alpha(\lambda)\ln\left(\frac{A}{l_P^2}\right)
-+ \beta(\lambda)
-+ \gamma(\lambda)\frac{l_P^2}{A}
-\]
+S(A, I) = A / (4G)  
++ alpha(lambda) · ln(A / l_P²)  
++ beta(lambda)  
++ gamma(lambda) · (l_P² / A)
 
-with
-\[
-\alpha(\lambda) = -\frac{1}{2} - \lambda, \quad \lambda \in [0,1].
-\]
+with:
 
-The interpolation parameter λ depends on geometric area and accessible information,
+alpha(lambda) = −1/2 − lambda, lambda ∈ [0, 1]
+
+The interpolation parameter lambda depends on geometric area and accessible information,
 and governs the transition between LQG-dominated and holographic regimes.
 
 ---
@@ -69,7 +66,7 @@ and governs the transition between LQG-dominated and holographic regimes.
 |15 | Hayden–Preskill Protocol | Quantum Information | Completed |
 |16 | Dirac Equation & Fermions | Relativistic Fermions | Completed |
 
-**Verification summary:**  
+**Verification summary:**
 - 16 modules completed  
 - 91 / 94 tests passed (96.8%)
 
@@ -79,7 +76,7 @@ and governs the transition between LQG-dominated and holographic regimes.
 
 | # | Module | Domain | Status |
 |---|--------|--------|--------|
-|17 | Reissner–Nordström Black Holes | Charged BH Physics | In progress |
+|17 | Reissner–Nordström Black Holes | Charged Black Hole Physics | In progress |
 |18 | Wormholes (Einstein–Rosen) | Quantum Gravity | In progress |
 |19 | Quantum Error Correction | Holography | In progress |
 |20 | Topological Entropy | Quantum Topology | In progress |
@@ -90,3 +87,4 @@ toward the verified core framework in v3.1.
 ---
 
 ## Repository Structure
+
