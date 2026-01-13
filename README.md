@@ -87,12 +87,4 @@ toward the verified core framework in v3.1.
 ---
 
 ## Repository Structure
-kaelion/
-├── paper/
-├── code/
-│ ├── core_modules/
-│ ├── extensions/
-│ └── utilities/
-├── data/
-├── figures/
-└── documentation/
+
