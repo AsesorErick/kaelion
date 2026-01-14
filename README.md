@@ -4,10 +4,11 @@
 
 **A Phenomenological Correspondence Between Loop Quantum Gravity and Holographic Entropy**
 
+---
+
 ## Overview
 
 Kaelion proposes a correspondence equation that interpolates between Loop Quantum Gravity (LQG) and holographic entropy calculations:
-
 ```
 S(A,I) = A/(4G) + α(λ)ln(A/l_P²) + β(λ) + γ(λ)(l_P²/A)
 ```
@@ -18,23 +19,29 @@ where the interpolation parameter λ ∈ [0,1] controls the transition:
 
 **Key prediction:** α transitions from -0.5 to -1.5 during black hole evaporation. This is falsifiable and unique to Kaelion.
 
-## What's New in v3.1
+---
 
-Modules 21-25 address key questions from the physics community:
+## 🔬 Theoretical Foundation
 
-| Module | Question | Kaelion Answer |
-|--------|----------|----------------|
-| 21 | Does Kaelion resolve the information paradox? | YES (partially) |
-| 22 | Compatible with entropy islands (2019+)? | YES |
-| 23 | Does Kaelion predict a firewall? | NO |
-| 24 | How does λ relate to complexity? | Higher C → higher λ |
-| 25 | How does λ affect scrambling? | Higher λ → faster scrambling |
+**Want to know WHY α(λ) = -0.5 - λ?**
+
+See: **[kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation)**
+
+The derivation shows that λ emerges from:
+1. Tensor network coarse-graining
+2. Holographic quantum error correction
+
+Both approaches independently give α(λ) = -0.5 - λ.
+
+---
 
 ## Statistics
 
 - **Modules:** 25
 - **Verifications:** 156/164 passed (95.1%)
 - **Domains:** 22 physics areas covered
+
+---
 
 ## Module Overview
 
@@ -47,8 +54,18 @@ Applications: Page curve, Schwarzschild 4D, de Sitter, GSL, Kerr, LQC Big Bounce
 ### Advanced (17-20): 30/32 tests passed
 Extensions: Reissner-Nordström, wormholes (ER=EPR), quantum error correction, topological entropy.
 
-### Implications (21-25): 35/39 tests passed [NEW]
-Key questions: Information paradox, entropy islands, firewalls, complexity, scrambling.
+### Implications (21-25): 35/39 tests passed
+Key questions answered:
+
+| Module | Question | Answer |
+|--------|----------|--------|
+| 21 | Does Kaelion resolve the information paradox? | YES (partially) |
+| 22 | Compatible with entropy islands (2019+)? | YES |
+| 23 | Does Kaelion predict a firewall? | NO |
+| 24 | How does λ relate to complexity? | Higher C → higher λ |
+| 25 | How does λ affect scrambling? | Higher λ → faster |
+
+---
 
 ## Key Constants
 
@@ -59,16 +76,18 @@ Key questions: Information paradox, entropy islands, firewalls, complexity, scra
 | α_CFT | -1.5 | Sen (2012) |
 | A_c | 52.91 l_P² | Derived |
 
-## Installation
+---
 
+## Installation
 ```bash
 git clone https://github.com/AsesorErick/kaelion.git
 cd kaelion/code
 python3 summary_v31.py
 ```
 
-## Citation
+---
 
+## Citation
 ```bibtex
 @software{perez_kaelion_2026,
   author = {Pérez Eugenio, Erick Francisco},
@@ -79,11 +98,29 @@ python3 summary_v31.py
 }
 ```
 
+---
+
+## Related Repositories
+
+| Repository | Description |
+|------------|-------------|
+| **kaelion** (this) | Main model and simulations |
+| [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation) | Theoretical foundation |
+
+---
+
 ## License
 
 MIT License
+
+---
 
 ## Author
 
 Erick Francisco Pérez Eugenio  
 January 2026
+```
+
+6. Commit message:
+```
+Updated README with link to kaelion-derivation
