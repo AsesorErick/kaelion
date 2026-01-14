@@ -1,71 +1,89 @@
 """
-RESUMEN DE SIMULACIONES - PROYECTO KAELION v3.0
-================================================
+SIMULATION SUMMARY - KAELION PROJECT v3.0
+==========================================
 
-Este documento resume todas las simulaciones completadas
-como parte del Proyecto Kaelion v3.0.
+Complete summary of all simulations for the Kaelion v3.0 project.
 
-Total: 13 módulos con 53 verificaciones independientes.
+Total: 20 modules with 125 independent verification tests.
+Result: 121/125 passed (96.8%)
 
-Para publicación en Zenodo y repositorios similares.
+Author: Erick Francisco Perez Eugenio
+Date: January 2026
+DOI: 10.5281/zenodo.18237393
 """
 
 print("="*75)
-print("RESUMEN DE SIMULACIONES - PROYECTO KAELION v3.0")
+print("SIMULATION SUMMARY - KAELION PROJECT v3.0")
 print("="*75)
 
 # =============================================================================
-# LISTA DE SIMULACIONES
+# COMPLETE MODULE LIST (1-20)
 # =============================================================================
 
 simulations = [
-    # Sesiones 1-8 (anteriores)
-    {"num": 1, "name": "CHSH / Desigualdades de Bell", "tests": 3, "passed": 3, 
-     "file": "module1_chsh.py", "domain": "Mecánica Cuántica"},
-    {"num": 2, "name": "Ecuación de Klein-Gordon", "tests": 5, "passed": 5, 
-     "file": "module2_klein_gordon.py", "domain": "Campos Relativistas"},
-    {"num": 3, "name": "Holografía Ryu-Takayanagi", "tests": 5, "passed": 5, 
-     "file": "module3_holography_rt.py", "domain": "Holografía"},
+    # Core Modules (1-8)
+    {"num": 1, "name": "CHSH / Bell Inequalities", "tests": 3, "passed": 3, 
+     "file": "module01_chsh.py", "domain": "Quantum Mechanics"},
+    {"num": 2, "name": "Klein-Gordon Equation", "tests": 5, "passed": 5, 
+     "file": "module02_klein_gordon.py", "domain": "Relativistic Fields"},
+    {"num": 3, "name": "Ryu-Takayanagi Holography", "tests": 5, "passed": 5, 
+     "file": "module03_holography_rt.py", "domain": "Holography"},
     {"num": 4, "name": "LQG Spin Networks", "tests": 5, "passed": 5, 
-     "file": "module4_lqg_spin.py", "domain": "Loop Quantum Gravity"},
+     "file": "module04_lqg_spin_networks.py", "domain": "Loop Quantum Gravity"},
     {"num": 5, "name": "LQG Volume Operator", "tests": 5, "passed": 5, 
-     "file": "module5_lqg_volume.py", "domain": "Loop Quantum Gravity"},
+     "file": "module05_lqg_volume.py", "domain": "Loop Quantum Gravity"},
     {"num": 6, "name": "LQG 6j Symbols", "tests": 5, "passed": 5, 
-     "file": "module6_lqg_6j.py", "domain": "Loop Quantum Gravity"},
+     "file": "module06_lqg_6j_symbols.py", "domain": "Loop Quantum Gravity"},
     {"num": 7, "name": "BTZ Black Hole (2+1D)", "tests": 5, "passed": 5, 
-     "file": "module7_btz.py", "domain": "Agujeros Negros"},
-    {"num": 8, "name": "LQG-Holografía Divergencias", "tests": 5, "passed": 5, 
-     "file": "module8_lqg_holo.py", "domain": "Correspondencia"},
+     "file": "module07_btz_black_hole.py", "domain": "Black Holes"},
+    {"num": 8, "name": "LQG-Holography Connection", "tests": 5, "passed": 5, 
+     "file": "module08_lqg_holography.py", "domain": "Correspondence"},
     
-    # Sesiones nuevas (hoy)
-    {"num": 9, "name": "Curva de Page Completa", "tests": 7, "passed": 6, 
-     "file": "page_curve_kaelion.py", "domain": "Información Cuántica"},
-    {"num": 10, "name": "Schwarzschild 4D", "tests": 8, "passed": 8, 
-     "file": "schwarzschild_4d.py", "domain": "Agujeros Negros 4D"},
-    {"num": 11, "name": "Horizonte de Sitter", "tests": 6, "passed": 6, 
-     "file": "de_sitter_horizon.py", "domain": "Cosmología"},
-    {"num": 12, "name": "Segunda Ley Generalizada", "tests": 6, "passed": 6, 
-     "file": "gsl_verification.py", "domain": "Termodinámica"},
-    {"num": 13, "name": "Kerr (con rotación)", "tests": 7, "passed": 7, 
-     "file": "kerr_black_hole.py", "domain": "Agujeros Negros Astrofísicos"},
+    # Extended Modules (9-16)
+    {"num": 9, "name": "Page Curve Evolution", "tests": 7, "passed": 6, 
+     "file": "module09_page_curve.py", "domain": "Quantum Information"},
+    {"num": 10, "name": "Schwarzschild Black Hole (4D)", "tests": 8, "passed": 8, 
+     "file": "module10_schwarzschild_4d.py", "domain": "Black Holes 4D"},
+    {"num": 11, "name": "de Sitter Horizon", "tests": 6, "passed": 6, 
+     "file": "module11_de_sitter.py", "domain": "Cosmology"},
+    {"num": 12, "name": "Generalized Second Law", "tests": 6, "passed": 6, 
+     "file": "module12_gsl.py", "domain": "Thermodynamics"},
+    {"num": 13, "name": "Kerr Black Hole (Rotating)", "tests": 7, "passed": 7, 
+     "file": "module13_kerr.py", "domain": "Astrophysical BH"},
+    {"num": 14, "name": "LQC Big Bounce", "tests": 7, "passed": 6, 
+     "file": "module14_lqc_bigbounce.py", "domain": "Quantum Cosmology"},
+    {"num": 15, "name": "Hayden-Preskill Protocol", "tests": 7, "passed": 7, 
+     "file": "module15_hayden_preskill.py", "domain": "Quantum Information"},
+    {"num": 16, "name": "Dirac Equation (Fermions)", "tests": 7, "passed": 7, 
+     "file": "module16_dirac.py", "domain": "Relativistic Fermions"},
+    
+    # Advanced Modules (17-20)
+    {"num": 17, "name": "Reissner-Nordstrom (Charged)", "tests": 8, "passed": 7, 
+     "file": "module17_reissner_nordstrom.py", "domain": "Charged Black Holes"},
+    {"num": 18, "name": "Wormholes (Einstein-Rosen)", "tests": 8, "passed": 7, 
+     "file": "module18_wormholes.py", "domain": "ER=EPR"},
+    {"num": 19, "name": "Quantum Error Correction", "tests": 8, "passed": 8, 
+     "file": "module19_qec.py", "domain": "Holographic QEC"},
+    {"num": 20, "name": "Topological Entropy", "tests": 8, "passed": 8, 
+     "file": "module20_topological.py", "domain": "Quantum Topology"},
 ]
 
 # =============================================================================
-# TABLA RESUMEN
+# SUMMARY TABLE
 # =============================================================================
 
 print("\n" + "="*75)
-print("TABLA DE MÓDULOS")
+print("MODULE TABLE")
 print("="*75)
 
-print(f"\n{'#':<4} {'Módulo':<35} {'Dominio':<25} {'Tests':<10} {'Estado':<10}")
+print(f"\n{'#':<4} {'Module':<35} {'Domain':<25} {'Tests':<10} {'Status':<10}")
 print("-" * 85)
 
 total_tests = 0
 total_passed = 0
 
 for sim in simulations:
-    status = "✓ OK" if sim['passed'] == sim['tests'] else f"⚠ {sim['passed']}/{sim['tests']}"
+    status = "OK" if sim['passed'] == sim['tests'] else f"{sim['passed']}/{sim['tests']}"
     print(f"{sim['num']:<4} {sim['name']:<35} {sim['domain']:<25} "
           f"{sim['tests']:<10} {status:<10}")
     total_tests += sim['tests']
@@ -74,176 +92,116 @@ for sim in simulations:
 print("-" * 85)
 print(f"{'TOTAL':<4} {'':<35} {'':<25} {total_tests:<10} {total_passed}/{total_tests}")
 
-
 # =============================================================================
-# ECUACIÓN DE CORRESPONDENCIA
+# STATISTICS BY CATEGORY
 # =============================================================================
 
 print("\n" + "="*75)
-print("ECUACIÓN DE CORRESPONDENCIA FINAL")
+print("STATISTICS BY CATEGORY")
+print("="*75)
+
+categories = [
+    ("Core (1-8)", simulations[0:8]),
+    ("Extended (9-16)", simulations[8:16]),
+    ("Advanced (17-20)", simulations[16:20]),
+]
+
+for cat_name, cat_sims in categories:
+    cat_tests = sum(s['tests'] for s in cat_sims)
+    cat_passed = sum(s['passed'] for s in cat_sims)
+    pct = 100 * cat_passed / cat_tests if cat_tests > 0 else 0
+    print(f"  {cat_name}: {cat_passed}/{cat_tests} ({pct:.1f}%)")
+
+print(f"\n  TOTAL: {total_passed}/{total_tests} ({100*total_passed/total_tests:.1f}%)")
+
+# =============================================================================
+# CORRESPONDENCE EQUATION
+# =============================================================================
+
+print("\n" + "="*75)
+print("CORRESPONDENCE EQUATION")
 print("="*75)
 
 print("""
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                           ║
-║   S(A,I) = A/(4G) + α(λ)ln(A/l²_P) + β(λ) + γ(λ)(l²_P/A)                 ║
-║                                                                           ║
-║   donde:                                                                  ║
-║                                                                           ║
-║   λ(A,I) = [1 - exp(-γA/4πl²_P)] × [S_acc/S_total]                       ║
-║                                                                           ║
-║   α(λ) = -1/2 - λ           (interpola entre LQG y Holografía)           ║
-║                                                                           ║
-║   A_c = 4π/γ × l²_P ≈ 52.9 l²_P   (derivado, no ajustado)                ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
++===========================================================================+
+|                                                                           |
+|   S(A,I) = A/(4G) + alpha(lambda)*ln(A/l_P^2) + beta(lambda)             |
+|                  + gamma(lambda)*(l_P^2/A)                                |
+|                                                                           |
+|   where:                                                                  |
+|                                                                           |
+|   lambda(A,I) = [1 - exp(-gamma*A / 4*pi*l_P^2)] * [S_acc/S_total]       |
+|                                                                           |
+|   alpha(lambda) = -1/2 - lambda   (interpolates LQG <-> Holography)      |
+|                                                                           |
+|   A_c = 4*pi/gamma * l_P^2 = 52.91 l_P^2   (derived, not fitted)        |
+|                                                                           |
++===========================================================================+
 """)
 
-
 # =============================================================================
-# PREDICCIONES
+# KEY CONSTANTS
 # =============================================================================
 
-print("\n" + "="*75)
-print("PREDICCIONES PRINCIPALES")
+print("="*75)
+print("KEY CONSTANTS")
 print("="*75)
 
 print("""
-1. TRANSICIÓN α(t) DURANTE EVAPORACIÓN
-   • α va de -0.5 (LQG) a -1.5 (Holo) durante la evaporación
-   • Crossover en Page time (t ≈ 0.65τ)
-   • PREDICCIÓN FALSIFICABLE
-
-2. ÁREA CRÍTICA A_c
-   • Transición LQG → Holo en A_c = 4π/γ ≈ 52.9 l²_P
-   • BH pequeños: LQG dominante
-   • BH grandes: Holografía dominante
-
-3. EFECTO DE ROTACIÓN (Kerr)
-   • λ aumenta ligeramente con a*
-   • Más estructura accesible con rotación
-
-4. EXTENSIÓN COSMOLÓGICA (de Sitter)
-   • λ depende del contenido de materia
-   • Universo vacío → LQG, con materia → Holo
-
-5. CONSISTENCIA TERMODINÁMICA
-   • GSL preservada durante toda la evolución
-   • Correcciones subdominantes (< 1% de S_BH)
+  gamma (Immirzi)  = 0.2375
+  alpha_LQG        = -0.5
+  alpha_CFT        = -1.5
+  A_c              = 52.91 l_P^2
+  t_Page/tau_evap  = 0.646
 """)
 
-
 # =============================================================================
-# DOMINIOS CUBIERTOS
+# DOMAINS COVERED
 # =============================================================================
 
-print("\n" + "="*75)
-print("DOMINIOS CUBIERTOS")
+print("="*75)
+print("PHYSICS DOMAINS COVERED")
 print("="*75)
 
-domains = {}
-for sim in simulations:
-    d = sim['domain']
-    if d not in domains:
-        domains[d] = []
-    domains[d].append(sim['name'])
-
-for domain, modules in domains.items():
-    print(f"\n{domain}:")
-    for m in modules:
-        print(f"  • {m}")
-
+domains = set(s['domain'] for s in simulations)
+for i, domain in enumerate(sorted(domains), 1):
+    print(f"  {i}. {domain}")
 
 # =============================================================================
-# ARCHIVOS GENERADOS
+# MAIN RESULT
 # =============================================================================
 
 print("\n" + "="*75)
-print("ARCHIVOS GENERADOS")
-print("="*75)
-
-print("\nCÓDIGO PYTHON:")
-for sim in simulations:
-    print(f"  • {sim['file']}")
-
-print("\nARCHIVOS ADICIONALES:")
-additional = [
-    "correspondence_equation.py",
-    "derive_Ac.py", 
-    "lambda_determination.py",
-    "new_predictions.py",
-    "lqg_holo_divergences.py",
-    "implications_analysis.py",
-    "pending_simulations.py"
-]
-for f in additional:
-    print(f"  • {f}")
-
-print("\nVISUALIZACIONES (PNG):")
-visualizations = [
-    "Page_Curve_Kaelion.png",
-    "Schwarzschild_4D.png",
-    "deSitter_Horizon.png",
-    "GSL_Verification.png",
-    "Kerr_BlackHole.png",
-    "Correspondence_Equation.png",
-    "Ac_Derivation.png",
-    "New_Predictions.png",
-    "Lambda_Determination.png"
-]
-for v in visualizations:
-    print(f"  • {v}")
-
-print("\nDOCUMENTOS:")
-print("  • Kaelion_v3_Consolidacion.docx")
-
-
-# =============================================================================
-# RESUMEN FINAL
-# =============================================================================
-
-print("\n" + "="*75)
-print("RESUMEN FINAL")
+print("MAIN RESULT")
 print("="*75)
 
 print(f"""
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                           ║
-║                    PROYECTO KAELION v3.0                                  ║
-║                                                                           ║
-║                    SIMULACIONES COMPLETADAS                               ║
-║                                                                           ║
-╠═══════════════════════════════════════════════════════════════════════════╣
-║                                                                           ║
-║  ESTADÍSTICAS:                                                            ║
-║  • Módulos: 13                                                            ║
-║  • Verificaciones: {total_passed}/{total_tests} pasadas ({100*total_passed/total_tests:.1f}%)                              ║
-║  • Dominios cubiertos: {len(domains)}                                                 ║
-║                                                                           ║
-║  DOMINIOS:                                                                ║
-║  • Mecánica Cuántica (CHSH)                                               ║
-║  • Campos Relativistas (Klein-Gordon)                                     ║
-║  • Holografía (Ryu-Takayanagi)                                            ║
-║  • Loop Quantum Gravity (Spin, Volume, 6j)                                ║
-║  • Agujeros Negros (BTZ, Schwarzschild, Kerr)                             ║
-║  • Cosmología (de Sitter)                                                 ║
-║  • Información Cuántica (Page curve)                                      ║
-║  • Termodinámica (GSL)                                                    ║
-║                                                                           ║
-║  RESULTADO PRINCIPAL:                                                     ║
-║  Ecuación de correspondencia sin parámetros libres que:                   ║
-║  • Unifica LQG y Holografía                                               ║
-║  • Predice transición α(t) verificable                                    ║
-║  • Es termodinámicamente consistente                                      ║
-║  • Se extiende a cosmología y rotación                                    ║
-║                                                                           ║
-║  ESTADO: HIPÓTESIS CIENTÍFICA FORMULADA                                   ║
-║  Pendiente: Validación experimental / revisión por pares                  ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-""")
++===========================================================================+
+|                                                                           |
+|                         KAELION PROJECT v3.0                              |
+|                                                                           |
+|                      SIMULATIONS COMPLETED                                |
+|                                                                           |
++===========================================================================+
+|                                                                           |
+|  STATISTICS:                                                              |
+|  - Modules: 20                                                            |
+|  - Verifications: {total_passed}/{total_tests} passed ({100*total_passed/total_tests:.1f}%)                               |
+|  - Domains covered: {len(domains)}                                                 |
+|                                                                           |
+|  KEY PREDICTION:                                                          |
+|  - alpha transitions from -0.5 (LQG) to -1.5 (Holographic)               |
+|  - Transition occurs during black hole evaporation                        |
+|  - This is FALSIFIABLE and UNIQUE to Kaelion                             |
+|                                                                           |
+|  STATUS: SCIENTIFIC HYPOTHESIS FORMULATED                                 |
+|  Pending: Experimental validation / peer review                           |
+|                                                                           |
++===========================================================================+
 
-print("\n" + "="*75)
-print("Proyecto Kaelion v3.0 - Erick Francisco Pérez Eugenio")
-print("Enero 2026")
-print("="*75)
+
+===========================================================================
+Kaelion Project v3.0 - Erick Francisco Perez Eugenio
+January 2026 - DOI: 10.5281/zenodo.18237393
+===========================================================================
+""")

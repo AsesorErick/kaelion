@@ -2,7 +2,7 @@
 
 ## A Phenomenological Correspondence Between Loop Quantum Gravity and Holography
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18237392.svg)](https://doi.org/10.5281/zenodo.18237392)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
