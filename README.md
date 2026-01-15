@@ -1,6 +1,6 @@
 # Kaelion v3.1
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18237393.svg)](https://doi.org/10.5281/zenodo.18237393)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18238030.svg)](https://doi.org/10.5281/zenodo.18238030)
 
 **A Phenomenological Correspondence Between Loop Quantum Gravity and Holographic Entropy**
 
