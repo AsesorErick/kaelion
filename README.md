@@ -94,7 +94,7 @@ python3 summary_v31.py
   title = {Kaelion v3.1: A Phenomenological Correspondence Between LQG and Holography},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.18237393}
+  doi = {10.5281/zenodo.18238030}
 }
 ```
 
