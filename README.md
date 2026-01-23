@@ -24,27 +24,17 @@ where the interpolation parameter λ ∈ [0,1] controls the transition:
 
 ## 🎯 NEW in v3.3: Experimental Verification Complete
 
-### IBM Quantum Hardware Results
+## 📊 Experimental Data
 
-| Experiment | Job ID | Result |
-|------------|--------|--------|
-| **74+ data points** | 30+ jobs | p < 10⁻¹⁰ |
-| SIM01 Spatial Gradient | d5p8ij0r0v5s739nkph0 | Correlation **0.932** |
-| SIM02 LQG Region | d5p9289dgvjs73dbe2r0 | **λ = 0.24** detected |
-| SIM03 Universality | d5p9gk8h0i0s73eov7r0 | **Error = 0**, 11 models |
+**Complete experimental data is maintained in [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments)**
 
-### Universality Verified
+Summary:
+- **136+ data points** from IBM Quantum hardware
+- **3 backends:** ibm_fez, ibm_torino, ibm_marrakesh
+- **λ range:** [0.006, 1.000] - complete coverage
+- **All Job IDs documented** for reproducibility
 
-α(λ) = -1/2 - λ tested across **5 different quantum models**:
-- Kicked Ising (integrable + chaotic)
-- Heisenberg XXZ
-- Random Circuits  
-- Transverse Field Ising
-- XY Model
-
-**Result:** Zero error across all models.
-
-See: `experimental/verification_IBM/`
+See: `kaelion-experiments/data/EXPERIMENTAL_DATA_MASTER.json`
 
 ---
 
@@ -112,12 +102,10 @@ Key questions answered:
 
 ```
 kaelion/
-├── code/                    # 25+ theoretical modules
-├── experimental/
-│   ├── verification_V0/     # Constant verification
-│   └── verification_IBM/    # IBM Quantum experiments (NEW)
+├── code/                    # 25 theoretical modules
+├── experimental/            # Local verification scripts
+│   └── → Full data at kaelion-experiments
 ├── figures/
-│   └── ibm_verification/    # Experimental results (NEW)
 ├── paper/
 ├── README.md
 ├── CITATION.cff
@@ -163,9 +151,9 @@ python SIM03_UNIVERSALITY_IBM.py
 | Repository | Description |
 |------------|-------------|
 | **kaelion** (this) | Main model and simulations |
-| [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation) | Theoretical foundation |
+| [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation) | Theoretical foundation (Modules 26-38) |
+| [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments) | **Complete experimental data (136+ points)** |
 | [kaelion-formal](https://github.com/AsesorErick/kaelion-formal) | Formal verification (Lean/Coq) |
-| [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments) | Extended experimental data |
 
 ---
 
