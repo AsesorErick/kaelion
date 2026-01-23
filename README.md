@@ -1,6 +1,6 @@
-# Kaelion v3.3
+# Kaelion v3.4
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18238030.svg)](https://doi.org/10.5281/zenodo.18238030)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18344067.svg)](https://doi.org/10.5281/zenodo.18344067)
 
 **A Phenomenological Correspondence Between Loop Quantum Gravity and Holographic Entropy**
 
@@ -22,27 +22,45 @@ where the interpolation parameter λ ∈ [0,1] controls the transition:
 
 ---
 
-## 🎯 NEW in v3.3: Experimental Verification Complete
+## NEW in v3.4: Consolidated Experimental Data
 
-## 📊 Experimental Data
+### IBM Quantum Hardware Results
 
-**Complete experimental data is maintained in [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments)**
+| Metric | Value |
+|--------|-------|
+| **Total Data Points** | 136+ |
+| **Hardware Backends** | ibm_fez, ibm_torino, ibm_marrakesh |
+| **λ Range Covered** | [0.006, 1.000] |
+| **Statistical Significance** | p < 10⁻¹⁰ |
 
-Summary:
-- **136+ data points** from IBM Quantum hardware
-- **3 backends:** ibm_fez, ibm_torino, ibm_marrakesh
-- **λ range:** [0.006, 1.000] - complete coverage
-- **All Job IDs documented** for reproducibility
+### Key Experiments
 
-See: `kaelion-experiments/data/EXPERIMENTAL_DATA_MASTER.json`
+| Experiment | Job ID | Result |
+|------------|--------|--------|
+| SIM01 Spatial Gradient | d5p8ij0r0v5s739nkph0 | Correlation **0.932** |
+| SIM02 LQG Region | d5p9289dgvjs73dbe2r0 | **λ = 0.245** detected |
+| SIM03 Universality | d5p9gk8h0i0s73eov7r0 | **Error = 0**, 5 Hamiltonians |
+
+### Universality Verified
+
+α(λ) = -1/2 - λ tested across **5 different quantum models**:
+- Kicked Ising (integrable + chaotic)
+- Heisenberg XXZ
+- Random Circuits  
+- Transverse Field Ising
+- XY Model
+
+**Result:** Zero error across all models.
+
+**Complete data:** [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments)
 
 ---
 
-## 🔬 Theoretical Foundation
+## Theoretical Foundation
 
 **Want to know WHY α(λ) = -0.5 - λ?**
 
-See: **[kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation)**
+See: [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation)
 
 The derivation shows that λ emerges from:
 1. Tensor network coarse-graining
@@ -56,7 +74,7 @@ Both approaches independently give α(λ) = -0.5 - λ.
 
 - **Modules:** 25
 - **Theoretical Verifications:** 156/164 passed (95.1%)
-- **Experimental Points:** 74+ (IBM Quantum)
+- **Experimental Points:** 136+ (IBM Quantum)
 - **Domains:** 22 physics areas covered
 
 ---
@@ -102,10 +120,12 @@ Key questions answered:
 
 ```
 kaelion/
-├── code/                    # 25 theoretical modules
-├── experimental/            # Local verification scripts
-│   └── → Full data at kaelion-experiments
+├── code/                    # 25+ theoretical modules
+├── experimental/
+│   ├── verification_V0/     # Constant verification
+│   └── verification_IBM/    # IBM Quantum experiments
 ├── figures/
+│   └── ibm_verification/    # Experimental results
 ├── paper/
 ├── README.md
 ├── CITATION.cff
@@ -137,10 +157,10 @@ python SIM03_UNIVERSALITY_IBM.py
 ```bibtex
 @software{perez_kaelion_2026,
   author = {Pérez Eugenio, Erick Francisco},
-  title = {Kaelion v3.3: Experimental Verification of the LQG-Holography Correspondence},
+  title = {Kaelion v3.4: Experimental Verification of the LQG-Holography Correspondence},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.18238030}
+  doi = {10.5281/zenodo.18344067}
 }
 ```
 
@@ -148,12 +168,14 @@ python SIM03_UNIVERSALITY_IBM.py
 
 ## Related Repositories
 
-| Repository | Description |
-|------------|-------------|
-| **kaelion** (this) | Main model and simulations |
-| [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation) | Theoretical foundation (Modules 26-38) |
-| [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments) | **Complete experimental data (136+ points)** |
-| [kaelion-formal](https://github.com/AsesorErick/kaelion-formal) | Formal verification (Lean/Coq) |
+| Repository | Description | DOI |
+|------------|-------------|-----|
+| **kaelion** (this) | Main model (25 modules) | [10.5281/zenodo.18344067](https://doi.org/10.5281/zenodo.18344067) |
+| [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments) | All experimental data (136+ points) | [10.5281/zenodo.18354608](https://doi.org/10.5281/zenodo.18354608) |
+| [kaelion-derivation](https://github.com/AsesorErick/kaelion-derivation) | Theoretical derivations (Modules 26-38) | [10.5281/zenodo.18345038](https://doi.org/10.5281/zenodo.18345038) |
+| [kaelion-formal](https://github.com/AsesorErick/kaelion-formal) | Formal verification | [10.5281/zenodo.18345110](https://doi.org/10.5281/zenodo.18345110) |
+| [kaelion-paper_v3](https://github.com/AsesorErick/kaelion-paper_v3) | Paper and verification code | [10.5281/zenodo.18355180](https://doi.org/10.5281/zenodo.18355180) |
+| [kaelion-flavor](https://github.com/AsesorErick/kaelion-flavor) | Flavor mixing predictions | [10.5281/zenodo.18347004](https://doi.org/10.5281/zenodo.18347004) |
 
 ---
 
