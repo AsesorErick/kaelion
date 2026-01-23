@@ -1,9 +1,3 @@
-# Texto para agregar/actualizar en kaelion/README.md
-
-## Sección a AGREGAR después de "## 🎯 NEW in v3.3":
-
----
-
 ## 📊 Experimental Data
 
 **Complete experimental data is maintained in [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments)**
