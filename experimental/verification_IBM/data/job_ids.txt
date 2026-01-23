@@ -1,0 +1,58 @@
+# Kaelion v3.3 - IBM Quantum Job IDs
+# For reproducibility - all jobs can be retrieved from IBM Quantum
+# Date: 22 January 2026
+
+## IBM Quantum Platform - ibm_fez (156 qubits)
+
+### Experiment 1: Scrambling Variable
+d5oprqc8d8hc73cj5ps0  # λ=0.2 → 0.7789
+d5oprq9h2mqc739dd6hg  # λ=0.4 → 0.8146
+d5oprql9j2ac739nbjog  # λ=0.5 → 0.7934
+d5oprql9j2ac739nbjpg  # λ=0.6 → 0.8172
+d5oprqrh36vs73bkn1f0  # λ=0.8 → 0.7285
+
+### Experiment 2: Circuit Depth
+d5oq1mbh36vs73bkn7vg  # 0 layers → λ=0.9988
+d5oq1mbh36vs73bkn80g  # 1 layer → λ=0.6250
+d5oq1mjh36vs73bkn810  # 2 layers → λ=0.5839
+d5oq1ml9j2ac739nbq50  # 3 layers → λ=0.9005
+d5oq1mph2mqc739ddcfg  # 4 layers → λ=0.7557
+d5oq1mt9j2ac739nbq60  # 5 layers → λ=0.7858
+
+### Experiment 3: Kicked Ising
+d5oq54s8d8hc73cj63fg  # Integrable → λ=0.9852
+d5oq54rh36vs73bknbm0  # Trans1 → λ=0.9729
+d5oq5559j2ac739nbth0  # Critical → λ=0.9008
+d5oq55c8d8hc73cj63h0  # Trans2 → λ=0.9675
+d5oq55d9j2ac739nbthg  # Chaotic → λ=0.9927
+
+## IBM Quantum Platform - ibm_torino (133 qubits)
+
+### Experiment 4: Cross-Platform Replication
+d5oqhfs8d8hc73cj6h2g  # λ=0.2 → 0.7998
+d5oqhg59j2ac739ncb30  # λ=0.4 → 0.8127
+d5oqhgd9j2ac739ncb3g  # λ=0.5 → 0.7915
+d5oqhgbh36vs73bknpbg  # λ=0.6 → 0.8249
+d5oqhghh2mqc739ddsng  # λ=0.8 → 0.7288
+
+## v3.3 New Simulations (22 January 2026)
+
+### SIM01: Spatial Gradient
+d5p8ij0r0v5s739nkph0  # 10 positions, correlation 0.932
+
+### SIM02: LQG Region Detection
+d5p9289dgvjs73dbe2r0  # λ=0.245 at J=0 (LQG pure)
+
+### SIM03: Universality Test
+d5p9gk8h0i0s73eov7r0  # 11 models, error=0
+
+## Earlier Sessions (21 January 2026)
+d5okvhs8d8hc73cj0lj0  # SIM01 ibm_fez
+d5ol51ph2mqc739d8eq0  # SIM02 ibm_fez
+d5ol3pd9j2ac739n6lbg  # SIM02 ibm_torino
+
+## Summary
+Total Jobs: 30+
+Total Data Points: 74+
+Backends: ibm_fez, ibm_torino
+Range: λ ∈ [0.24, 0.999]

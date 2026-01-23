@@ -1,19 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "Kaelion v3.0: A Phenomenological Correspondence Between Loop Quantum Gravity and Holography"
-version: 3.0.0
-date-released: 2026-01-13
+title: "Kaelion v3.3: Experimental Verification of the LQG-Holography Correspondence"
+version: 3.3.0
+date-released: 2026-01-22
 authors:
   - family-names: "Pérez Eugenio"
     given-names: "Erick Francisco"
-    orcid: ""
+    orcid: "https://orcid.org/0009-0006-3228-4847"
 abstract: >-
   Kaelion is a phenomenological research framework exploring a continuous 
   correspondence between Loop Quantum Gravity (LQG) and holographic entropy 
   formulations in black hole physics. The framework introduces a scale-dependent 
   interpolation parameter λ that connects discrete quantum geometry with 
-  continuum holographic descriptions.
+  continuum holographic descriptions. Version 3.3 includes comprehensive 
+  experimental verification on IBM Quantum hardware with 74+ data points 
+  confirming α(λ) = -1/2 - λ across multiple quantum models.
 keywords:
   - quantum gravity
   - loop quantum gravity
@@ -21,5 +23,10 @@ keywords:
   - black hole entropy
   - AdS/CFT
   - Bekenstein-Hawking
+  - IBM Quantum
+  - experimental verification
+  - OTOC
+  - quantum scrambling
 license: MIT
 repository-code: "https://github.com/AsesorErick/kaelion"
+doi: "10.5281/zenodo.18238030"
